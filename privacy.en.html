@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Lingo Flow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="lang-switch">
+      <a href="privacy.html">FR</a>
+      <a href="privacy.en.html" class="active">EN</a>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">Lingo Flow — Android application · Last updated: May 6, 2026</p>
+
+    <div class="callout">
+      <strong>In short.</strong> Lingo Flow reads text shown on your screen via Android's accessibility service, only to translate it in real time inside a floating bubble. Automatic translations run 100 % on your device and no content is sent over the internet. When you explicitly use the enriched translation, the chat tutor, voice dictation or audio playback, the text you select is sent to Google Gemini to produce a more accurate response. No content read from other apps is ever stored. No tracker, no advertising, no sharing with advertisers.
+    </div>
+
+    <h2>1. Who controls your data?</h2>
+    <p>This application is published by <strong>Mourad Miled</strong>, a private individual residing in France. For any question regarding this policy or your data: <a href="mailto:mil.quali@hotmail.com">mil.quali@hotmail.com</a>.</p>
+
+    <h2>2. Data stored locally on your device</h2>
+    <p>All the data below is stored <strong>exclusively on your device</strong>, in the application's private space. It only leaves your phone in the cases explicitly described in section 3.</p>
+    <ul>
+      <li><strong>Chat conversation with your tutor</strong> — the history of messages you exchange in the Messages tab, like in any chat app. Kept until you erase it (Settings → Privacy → Erase my conversations).</li>
+      <li><strong>Inferred user profile</strong> — a textual summary (up to 1500 characters) of what your tutor remembers about you (interests, daily life mentioned in chat, etc.), generated from your conversation and used to personalize future exchanges. Reset when you erase your conversations.</li>
+      <li><strong>Persona profile</strong> — a textual summary (up to 600 characters) of the elements the AI persona has shared about herself, to ensure consistency of her character across conversations. Reset alongside conversations.</li>
+      <li><strong>Application preferences</strong> — source/target languages, first name (optional), tutor gender, display settings, notification options, learning streak state.</li>
+      <li><strong>TTS audio cache</strong> — audio files of tutor replies you've listened to via the 🔊 button (up to 50 files, oldest automatically pruned).</li>
+      <li><strong>Voice messages cache</strong> — audio recordings of voice messages you've sent to the tutor, kept so you can replay them (up to 20 files, oldest automatically pruned).</li>
+    </ul>
+    <p><strong>Google backup:</strong> this data is included by default in your device's Google Auto Backup. You can disable this backup in Android system settings (Settings → System → Backup).</p>
+
+    <h2>3. Data sent to Google Gemini</h2>
+    <p>Lingo Flow uses the Google Gemini API (<code>generativelanguage.googleapis.com</code>) for its AI features. The following data is sent to Google Gemini, only in the cases listed:</p>
+    <ul>
+      <li><strong>Enriched translation from the floating bubble</strong> — when you explicitly tap the ✨ System 2 button on the bubble, the text selected on screen is sent to produce a higher-quality translation with a learner's note.</li>
+      <li><strong>Chat messages with the tutor</strong> — when you send a message in the Messages tab, your message + your recent history (up to the last 20 exchanges) + your profile are sent to generate the persona's reply.</li>
+      <li><strong>Grammar check</strong> — when you send a chat message, your message is also sent separately to verify grammar and propose pedagogical corrections.</li>
+      <li><strong>Voice transcription</strong> — when you send a voice message to the tutor, the audio recording is sent to be transcribed into text.</li>
+      <li><strong>Speech synthesis (TTS)</strong> — when you tap the 🔊 button on a tutor message, the message text is sent to generate an audio file to listen to.</li>
+      <li><strong>Automatic profile update</strong> — every 10 messages you send, your recent history is analyzed to update your user profile and the persona profile (cf. section 2). This is what allows the tutor to "remember" you over time.</li>
+      <li><strong>Re-engagement nudge generation</strong> — if you haven't replied to your tutor for several hours or days, a nudge message can be generated in the background to invite you to resume the conversation. At most 5 nudges over 7 days of total inactivity.</li>
+    </ul>
+    <p>Google processes this data in accordance with its own privacy policy, available at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>. Data is transmitted encrypted via HTTPS.</p>
+
+    <h2>4. Data NEVER collected nor sent</h2>
+    <p>Lingo Flow does not collect or transmit:</p>
+    <ul>
+      <li><strong>Content read via the accessibility service in other apps</strong> (WhatsApp, Messenger, browsers, social networks, etc.). This text is read in memory to produce the passive translation displayed in the bubble, then immediately discarded. It is neither stored nor sent over the internet — unless you explicitly trigger an action (✨ deck, chat, voice) on that specific content.</li>
+      <li><strong>No advertising identifier</strong> (Advertising ID), no unique device identifier, no fingerprinting.</li>
+      <li><strong>No third-party behavioral analytics</strong> (no Firebase Analytics, Google Analytics, Mixpanel, Crashlytics, etc.).</li>
+      <li><strong>No advertising</strong>, no ad SDK, no sharing with advertising networks.</li>
+      <li><strong>No geolocation</strong>, no access to contacts, photo gallery, calendar, SMS or personal files.</li>
+    </ul>
+
+    <h2>5. Android permissions used</h2>
+    <ul>
+      <li><strong>Accessibility service</strong> (BIND_ACCESSIBILITY_SERVICE) — to read text shown on screen and translate it in the floating bubble. Without this permission, the application cannot fulfill its core function.</li>
+      <li><strong>Display over other apps</strong> (SYSTEM_ALERT_WINDOW) — to display the floating bubble over the app you're consulting.</li>
+      <li><strong>Internet</strong> (INTERNET) — for the calls to the Google Gemini API listed in section 3.</li>
+      <li><strong>Foreground service</strong> (FOREGROUND_SERVICE) — to keep the accessibility service active and let Android show you the associated persistent notification.</li>
+      <li><strong>Notifications</strong> (POST_NOTIFICATIONS) — to deliver tutor messages when the app isn't open, as well as nudges and the daily recap.</li>
+      <li><strong>Microphone</strong> (RECORD_AUDIO) — to record your voice messages in the chat. No passive recording — the microphone is only activated while you explicitly hold the dictation button.</li>
+    </ul>
+
+    <h2>6. Profiling by artificial intelligence</h2>
+    <p>To personalize exchanges with the tutor, the application uses the Google Gemini API to generate an <strong>inferred user profile</strong> from the history of your conversations in the app (cf. section 2). This profile contains elements such as your interests mentioned in chat, daily life evoked, or language level.</p>
+    <p>This processing constitutes <strong>automated profiling</strong> within the meaning of Article 22 of the GDPR. Its <strong>purpose</strong> is exclusively pedagogical personalization. Its <strong>legal basis</strong> is the performance of the contract (= the provision of the chat tutor feature you chose to use). You can delete this profile at any time by erasing your conversations (Settings → Privacy → Erase my conversations); the tutor will then start fresh with no prior knowledge of you.</p>
+
+    <h2>7. Your rights (GDPR)</h2>
+    <p>In accordance with the General Data Protection Regulation (GDPR), you have the following rights:</p>
+    <ul>
+      <li><strong>Right of access</strong> — to know what data the application holds about you. Almost all your data is consultable directly in the app: your conversations in the Messages tab, your profile in Settings, your preferences in Settings.</li>
+      <li><strong>Right to rectification</strong> — to correct inaccurate data. You can change your first name and preferences in Settings at any time.</li>
+      <li><strong>Right to erasure</strong> — to delete your data. Three options: (a) "Erase my conversations" button in Settings → Privacy, which deletes your chat conversation and resets the profiles; (b) uninstall the application, which deletes all its local data; (c) request by email to <a href="mailto:mil.quali@hotmail.com">mil.quali@hotmail.com</a>.</li>
+      <li><strong>Right to portability</strong> — to receive your data in a structured format. You may request this by email; the export will be provided in JSON format.</li>
+      <li><strong>Right to object</strong> — to object to a processing. The transmission of your messages to Google Gemini is intrinsic to the chat's functioning; if you wish to object, you may simply stop using the chat (or uninstall the app).</li>
+      <li><strong>Right to lodge a complaint</strong> — you may at any time lodge a complaint with the <strong>CNIL</strong> (the French data protection authority): <a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>, or with your local EU data protection authority.</li>
+    </ul>
+
+    <h2>8. Cookies and trackers</h2>
+    <p>Lingo Flow is a native Android application and does not use any cookies, advertising trackers, or tracking pixels.</p>
+
+    <h2>9. Minors</h2>
+    <p>Lingo Flow is not specifically intended for children under 13 and does not knowingly collect any data from them. If you are a parent or guardian and you find that your child uses the application, you may contact us at <a href="mailto:mil.quali@hotmail.com">mil.quali@hotmail.com</a> to request the deletion of their data.</p>
+
+    <h2>10. Retention and durations</h2>
+    <ul>
+      <li>Data stored locally (cf. section 2) is kept until you erase your conversations or uninstall the application.</li>
+      <li>Data sent to Google Gemini is not retained by the application beyond the time necessary for the request. Its retention by Google is governed by Google's policy.</li>
+      <li>The application does not back up data to remote servers; all your data lives on your device.</li>
+    </ul>
+
+    <h2>11. Security</h2>
+    <p>Locally stored data benefits from Android's application sandboxing: only Lingo Flow can access it on your device. Data transmitted to Google Gemini travels exclusively over HTTPS (TLS 1.2+), guaranteeing encryption in transit.</p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>This policy may be updated to reflect application changes or legal requirements. Any substantial change will be flagged in the application via an update of the home screen or settings. The date of last update appears at the top of this document.</p>
+
+    <h2>13. Contact</h2>
+    <p>For any question, request or complaint regarding this privacy policy or your data:</p>
+    <ul>
+      <li><strong>Mourad Miled</strong>, France</li>
+      <li>Email: <a href="mailto:mil.quali@hotmail.com">mil.quali@hotmail.com</a></li>
+    </ul>
+
+    <footer>
+      © 2026 Mourad Miled · <a href="index.html">Home</a>
+    </footer>
+  </main>
+</body>
+</html>
